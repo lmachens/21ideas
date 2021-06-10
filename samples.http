@@ -1,0 +1,11 @@
+@port = {{$dotenv PORT}}
+@baseURL = www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+
+### Recipes by name
+GET www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata
+
+### Not found
+GET www.themealdb.com/api/json/v1/1/search.php?s=Frenchtoast
+
+
+FIXME: Make dynamic
