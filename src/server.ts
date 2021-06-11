@@ -20,7 +20,7 @@ app.use(express.static('dist/app'));
 app.use('/api', router);
 
 app.listen(PORT, () => {
-  console.log(`App listening at http://localhost:${PORT}`);
+  console.log(`Server listening at http://localhost:${PORT}`);
 });
 
 // Handle client routing, return all requests to the app
