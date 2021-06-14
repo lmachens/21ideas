@@ -2,7 +2,7 @@
 @baseURL = http://localhost:{{port}}
 
 ### Search recipes by name
-GET {{baseURL}}/api/search?recipename=Arrabiata
+GET {{baseURL}}/api/search?recipeName=Arrabiata
 
 
 
