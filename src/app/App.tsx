@@ -12,11 +12,7 @@ function App(): JSX.Element {
         <header className={styles['App-header']}>
           <img src={logo} className={styles['App-logo']} alt="logo" />
           <p>Hello Vite + React!</p>
-          <p>
-            <button onClick={() => setCount((count) => count + 1)}>
-              count is: {count}
-            </button>
-          </p>
+          <button onClick={() => alert('Hello World')}>Test me</button>
           <p>
             Edit <code>App.tsx</code> and save to test HMR updates.
           </p>
