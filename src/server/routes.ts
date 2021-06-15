@@ -1,6 +1,5 @@
 import express from 'express';
 import searchMeals from './search';
-// import recipe from './recipes';
 
 const router = express.Router();
 
