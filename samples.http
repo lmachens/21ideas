@@ -17,9 +17,6 @@ Content-Type: application/json
 }
 
 
-### Delete recipe from overview
-DELETE {{baseURL}}/api/recipes/arrabiata
-
 
 
 
