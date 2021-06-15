@@ -10,11 +10,15 @@ Content-Type: application/json
 
 {
   "name": "Arrabiata",
-  "ingredient1": "penne rigate",
-  "ingredient2": "chopped tomatoes",
-  "ingredient3": "red chile flakes",
-  "ingredient4": "garlic"
+  "ingredients": ["penne rigate", 
+  "chopped tomatoes", 
+  "red chile flakes",
+  "garlic"]
 }
+
+
+### Delete recipe from overview
+DELETE {{baseURL}}/api/recipes/arrabiata
 
 
 
