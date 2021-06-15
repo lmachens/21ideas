@@ -1,5 +1,6 @@
 import express from 'express';
 import searchMeals from './search';
+// import recipe from './recipes';
 
 const router = express.Router();
 
@@ -15,6 +16,11 @@ router.get('/search', async (_req, res, next) => {
   } catch (error) {
     next(error);
   }
+});
+
+router.post('/recipes', async (req, res) => {
+  console.log(req.body);
+  res.status(200).send('Hello world');
 });
 
 export default router;
