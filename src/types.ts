@@ -3,5 +3,5 @@ export type ErrorMessage = {
 };
 
 export type Query = {
-  recipe: string;
+  recipeName: string;
 };

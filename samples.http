@@ -4,6 +4,17 @@
 ### Search recipes by name
 GET {{baseURL}}/api/search?recipeName=Arrabiata
 
+### Add new recipe to overview
+POST {{baseURL}}/api/recipes
+Content-Type: application/json
+
+{
+  "name": "Arrabiata",
+  "ingredients": ["penne rigate", 
+  "chopped tomatoes", 
+  "red chile flakes",
+  "garlic"]
+}
 
 
 
