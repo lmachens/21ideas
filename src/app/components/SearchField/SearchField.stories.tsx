@@ -6,5 +6,5 @@ export default {
 };
 
 export const search = (): JSX.Element => (
-  <SearchField placeholder="Enter meal name" />
+  <SearchField placeholder="Search meals" onChange={console.log} />
 );
