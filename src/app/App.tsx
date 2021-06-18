@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import styles from './App.module.css';
+import placeholder from './components/SearchField/SearchField';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App(): JSX.Element {
@@ -11,11 +12,13 @@ function App(): JSX.Element {
       <div className={styles.App}>
         <header className={styles['App-header']}>
           <img src={logo} className={styles['App-logo']} alt="logo" />
-          <p>Hello Vite + React!</p>
+
           <button onClick={() => alert('Hello World')}>Test me</button>
-          <p>
-            Edit <code>App.tsx</code> and save to test HMR updates.
-          </p>
+
+          <label className={styles.label}>
+            <input className={styles.label__input} placeholder={placeholder} />
+          </label>
+
           <p>
             <a
               className={styles['App-link']}

@@ -1,0 +1,17 @@
+.label {
+  background: #f3f3f5;
+  color: #023047;
+}
+
+.label__input {
+  background: none;
+  border: none;
+  border-bottom: #023047 0.2em solid;
+  color: #023047;
+}
+
+.label__input::placeholder {
+  color: #023047;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  opacity: 50%;
+}
