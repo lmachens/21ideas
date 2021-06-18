@@ -3,5 +3,14 @@ export type ErrorMessage = {
 };
 
 export type Query = {
-  recipeName: string;
+  meal: string;
+};
+
+export type Meal = {
+  name: string;
+  ingredientsAmount: {
+    ingredient: string;
+    measure: string;
+  };
+  instructions: string;
 };

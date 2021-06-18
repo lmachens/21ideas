@@ -1,16 +1,27 @@
 import express from 'express';
 import searchMeals from './search';
+import { saveMeals, readMeals } from '../utils/meals';
 
 const router = express.Router();
+
+router.get('/meals', async (_req, res) => {
+  const meals = await readMeals();
+  res.json(meals);
+});
+
+router.post('/meals', async (req, res) => {
+  await saveMeals(req.body);
+  res.send('meal saved');
+});
 
 router.get('/search', async (_req, res, next) => {
   try {
     const { query } = _req;
-    if (typeof query.recipeName !== 'string') {
-      res.status(404).send('Hello world!');
+    if (typeof query.mealName !== 'string') {
+      res.status(404).send('Not found');
       return;
     }
-    const result = await searchMeals(query.recipeName);
+    const result = await searchMeals(query.mealName);
     res.status(200).json(result);
   } catch (error) {
     next(error);

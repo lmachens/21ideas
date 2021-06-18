@@ -4,8 +4,13 @@ dotenv.config();
 import express from 'express';
 import path from 'path';
 import router from './server/routes';
+import { connectDatabase } from './utils/database';
 
 const { PORT = 3020 } = process.env;
+
+if (process.env.MONGODB_URL === undefined) {
+  throw new Error('Missing env MONGODB_URL');
+}
 
 const app = express();
 
@@ -28,4 +33,8 @@ app.listen(PORT, () => {
 // Handle client routing, return all requests to the app
 app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname, 'app/index.html'));
+});
+
+connectDatabase(process.env.MONGODB_URL).then(() => {
+  console.log('Database connected');
 });

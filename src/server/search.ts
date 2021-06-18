@@ -2,13 +2,13 @@ import fetch from 'node-fetch';
 import { ErrorMessage } from '../types';
 
 export type Query = {
-  recipeName: string;
+  mealName: string;
 };
 
-async function searchMeals(recipeName: string): Promise<[]> {
+async function searchMeals(mealName: string): Promise<[]> {
   let apiURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=`;
-  if (recipeName) {
-    apiURL += `${recipeName}`;
+  if (mealName) {
+    apiURL += `${mealName}`;
   }
   const response = await fetch(apiURL);
   if (!response.ok) {
