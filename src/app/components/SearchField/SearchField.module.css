@@ -6,12 +6,13 @@
 .label__input {
   background: none;
   border: none;
-  border-bottom: #023047 0.2em solid;
+  border-bottom: #023047 0.1em solid;
   color: #023047;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .label__input::placeholder {
   color: #023047;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  opacity: 50%;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 80%;
 }

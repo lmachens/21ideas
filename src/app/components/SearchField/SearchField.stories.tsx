@@ -3,8 +3,9 @@ import SearchField from './SearchField';
 
 export default {
   title: 'Component/SearchField',
+  component: SearchField,
 };
 
 export const search = (): JSX.Element => (
-  <SearchField placeholder="Search meals" onChange={console.log} />
+  <SearchField value="" placeholder="Search for meals" onChange={console.log} />
 );
