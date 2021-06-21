@@ -14,12 +14,14 @@ function SearchField({
 }: InputProps): JSX.Element {
   return (
     <label className={styles.label}>
-      <input
-        className={styles.label__input}
-        placeholder={placeholder}
-        onChange={(event) => onChange(event.target.value)}
-        value={value}
-      />
+      <div className={styles.label__container}>
+        <input
+          className={styles.label__input}
+          placeholder={placeholder}
+          value={value}
+          onChange={(event) => onChange(event.target.value)}
+        />
+      </div>
     </label>
   );
 }
