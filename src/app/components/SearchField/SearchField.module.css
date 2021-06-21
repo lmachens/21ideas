@@ -1,0 +1,18 @@
+.label {
+  background: #f3f3f5;
+  color: #023047;
+}
+
+.label__input {
+  background: none;
+  border: none;
+  border-bottom: #023047 0.1em solid;
+  color: #023047;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.label__input::placeholder {
+  color: #023047;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 80%;
+}
