@@ -1,0 +1,9 @@
+.searchButton {
+  color: var(--text-color);
+  background: var(--accent-color);
+  font-size: 1.1rem;
+  padding: 0.1em 0.8em;
+  border: var(--text-color) 0.01em solid;
+  font-family: var(--font-family);
+  height: 2em;
+}
