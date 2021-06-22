@@ -8,7 +8,7 @@ type SearchButtonProps = {
 
 function SearchButton({ children, onClick }: SearchButtonProps): JSX.Element {
   return (
-    <button className={styles.button} onClick={onClick}>
+    <button className={styles.searchButton} onClick={onClick}>
       {children}
     </button>
   );
