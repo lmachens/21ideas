@@ -7,9 +7,9 @@ type HomeLinkProps = {
   link: string;
 };
 
-function HomeLink({ icon, link }: HomeLinkProps): JSX.Element {
+function HomeLink({ icon }: HomeLinkProps): JSX.Element {
   return (
-    <Link to={link} className={styles.homeLink}>
+    <Link to="/" className={styles.homeLink}>
       {icon}
     </Link>
   );
