@@ -11,22 +11,20 @@ function MealSearch({ onSubmit }: MealSearchProps): JSX.Element {
   const [search, setSearch] = useState('');
 
   return (
-    <div className={styles.searchContainer}>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          onSubmit(search);
-        }}
-        className={styles.searchForm}
-      >
-        <SearchField
-          value={search}
-          onChange={setSearch}
-          placeholder="Search..."
-        />
-        <SearchButton>Search</SearchButton>
-      </form>
-    </div>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSubmit(search);
+      }}
+      className={styles.searchForm}
+    >
+      <SearchField
+        value={search}
+        onChange={setSearch}
+        placeholder="Search..."
+      />
+      <SearchButton>Search</SearchButton>
+    </form>
   );
 }
 
