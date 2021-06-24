@@ -1,0 +1,12 @@
+.searchContainer {
+  display: grid;
+}
+
+.searchForm {
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+.searchButton {
+  align-self: right;
+}
