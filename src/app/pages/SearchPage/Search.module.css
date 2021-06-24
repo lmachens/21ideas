@@ -1,6 +1,14 @@
 .container {
   display: grid;
   height: 100vh;
-  grid-template-rows: 1fr auto;
+  grid-template-columns: min-max(150px, 25%) 1fr;
+  row-gap: 1em;
+  text-align: center;
+  align-items: center;
   background: var(--accent-color);
+  overflow: scroll;
+}
+
+.container__results::-webkit-scrollbar {
+  display: none;
 }
