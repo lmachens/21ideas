@@ -4,7 +4,7 @@
 }
 
 .label__input {
-  background: none;
+  background: var(--background-color);
   border: none;
   border-bottom: var(--text-color) 0.1em solid;
   color: var(--text-color);
