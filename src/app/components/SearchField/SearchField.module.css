@@ -1,18 +1,19 @@
 .label {
-  background: #f3f3f5;
-  color: #023047;
+  background: var(--background-color);
+  color: var(--text-color);
 }
 
 .label__input {
   background: none;
   border: none;
-  border-bottom: #023047 0.1em solid;
-  color: #023047;
-  font-family: 'Montserrat', sans-serif;
+  border-bottom: var(--text-color) 0.1em solid;
+  color: var(--text-color);
+  font-family: var(--font-family);
 }
 
 .label__input::placeholder {
-  color: #023047;
-  font-family: 'Montserrat', sans-serif;
+  color: var(--text-color);
+  font-family: var(--font-family);
   opacity: 80%;
+  font-size: 1em;
 }
