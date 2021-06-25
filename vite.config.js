@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite';
 import reactRefresh from '@vitejs/plugin-react-refresh';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const BACKEND_PORT = process.env.PORT || 6000;
 // https://vitejs.dev/config/

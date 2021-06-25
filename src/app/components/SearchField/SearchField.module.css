@@ -4,16 +4,18 @@
 }
 
 .label__input {
-  background: none;
+  background: var(--background-color);
+  margin-top: 7em;
   border: none;
   border-bottom: var(--text-color) 0.1em solid;
   color: var(--text-color);
   font-family: var(--font-family);
+  margin-bottom: 1em;
 }
 
 .label__input::placeholder {
   color: var(--text-color);
   font-family: var(--font-family);
   opacity: 80%;
-  font-size: 1em;
+  font-size: 1.2em;
 }
