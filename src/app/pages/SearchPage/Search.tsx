@@ -27,7 +27,11 @@ function Search(): JSX.Element {
       <NavBar />
       <MealSearch onSubmit={handleSearch} />
       {meals?.meals.map((meal) => {
-        return <a>{meal.strMeal}</a>;
+        return (
+          <div className={styles.container__results}>
+            <a>{meal.strMeal}</a>
+          </div>
+        );
       })}
     </div>
   );
