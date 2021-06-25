@@ -2,7 +2,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: min-max(150px, 25%) 1fr;
-  row-gap: 1em;
+  row-gap: 0.6em;
   text-align: center;
   align-items: center;
   background: var(--accent-color);
