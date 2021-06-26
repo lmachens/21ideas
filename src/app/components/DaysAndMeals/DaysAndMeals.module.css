@@ -1,0 +1,17 @@
+.daysAndMeals {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-size: 0.9em;
+  color: var(--text-color);
+}
+
+.weekday {
+  margin-bottom: 0.2em;
+  font-weight: 600;
+}
+
+.meals {
+  display: flex;
+  flex-direction: column;
+}
