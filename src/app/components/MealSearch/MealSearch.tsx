@@ -21,7 +21,7 @@ function MealSearch({ onSubmit }: MealSearchProps): JSX.Element {
       <SearchField
         value={search}
         onChange={setSearch}
-        placeholder="Search..."
+        placeholder="Enter meal name"
       />
       <SearchButton>Search</SearchButton>
     </form>
