@@ -5,17 +5,17 @@
 
 .label__input {
   background: var(--background-color);
-  margin-top: 7em;
   border: none;
   border-bottom: var(--text-color) 0.1em solid;
   color: var(--text-color);
   font-family: var(--font-family);
-  margin-bottom: 1em;
+  font-size: 0.9rem;
+  height: 1.5em;
 }
 
 .label__input::placeholder {
   color: var(--text-color);
   font-family: var(--font-family);
   opacity: 80%;
-  font-size: 1.2em;
+  font-size: 0.9rem;
 }

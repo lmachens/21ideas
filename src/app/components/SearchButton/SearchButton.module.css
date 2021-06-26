@@ -2,11 +2,8 @@
   color: var(--accent-color);
   background: var(--text-color);
   font-size: 0.9rem;
-  padding: 0.25em;
   border: var(--text-color) 0.01em solid;
   font-family: var(--font-family);
-  height: 2em;
+  height: 1.5em;
   border-radius: 0.1em;
-  align-items: flex-end;
-  margin-bottom: 1em;
 }
