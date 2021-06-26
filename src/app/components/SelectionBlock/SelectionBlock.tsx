@@ -8,6 +8,30 @@ function SelectionBlock(): JSX.Element {
       <MealSelection link="./search" />
       <MealSelection link="./search" />
       <MealSelection link="./search" />
+      <br />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <br />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <br />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <br />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <br />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <br />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
+      <MealSelection link={`/search`} />
     </div>
   );
 }
