@@ -10,49 +10,49 @@ function DaysAndMeals(): JSX.Element {
         <span>Lunch</span>
         <span>Dinner</span>
       </span>
-      <p></p>
+      <br />
       <span className={styles.weekday}>Tuesday</span>
       <span className={styles.meals}>
         <span>Breakfast</span>
         <span>Lunch</span>
         <span>Dinner</span>
       </span>
-      <p></p>
+      <br />
       <span className={styles.weekday}>Wednesday</span>
       <span className={styles.meals}>
         <span>Breakfast</span>
         <span>Lunch</span>
         <span>Dinner</span>
       </span>
-      <p></p>
+      <br />
       <span className={styles.weekday}>Thursday</span>
       <span className={styles.meals}>
         <span>Breakfast</span>
         <span>Lunch</span>
         <span>Dinner</span>
       </span>
-      <p></p>
+      <br />
       <span className={styles.weekday}>Friday</span>
       <span className={styles.meals}>
         <span>Breakfast</span>
         <span>Lunch</span>
         <span>Dinner</span>
       </span>
-      <p></p>
+      <br />
       <span className={styles.weekday}>Saturday</span>
       <span className={styles.meals}>
         <span>Breakfast</span>
         <span>Lunch</span>
         <span>Dinner</span>
       </span>
-      <p></p>
+      <br />
       <span className={styles.weekday}>Sunday</span>
       <span className={styles.meals}>
         <span>Breakfast</span>
         <span>Lunch</span>
         <span>Dinner</span>
       </span>
-      <p></p>
+      <br />
     </div>
   );
 }
