@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: minmax(9em, 25%) 1fr;
+  background: var(--background-color);
+  overflow: scroll;
+}
+
+.header {
+  grid-column: 1/-1;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  font-size: 1.1em;
+  padding-left: 2.7em;
+}
+
+.daysAndMeals {
+  background: var(--accent-color);
+  padding: 0.8em 1.7em;
+}
+
+.selectionBlock {
+  text-overflow: ellipsis;
+  padding: 1.5em 0.5em;
+  margin-bottom: 3em;
+}
