@@ -1,6 +1,7 @@
 .mealSelection {
+  display: flex;
+  flex-direction: column;
   font: var(--font-family);
-  font-size: 0.8em;
   background-color: var(--background-color);
   color: var(--text-color);
   border-bottom: var(--text-color) 0.01em solid;

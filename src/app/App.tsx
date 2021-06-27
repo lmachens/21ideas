@@ -1,27 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter, Switch, Route, RouteProps } from 'react-router-dom';
+import HomePage from './pages/HomePage/HomePage';
+import Search from './pages/SearchPage/Search';
 import styles from './App.module.css';
-import placeholder from './components/SearchField/SearchField';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+type CustomRouteProps = RouteProps & {
+  Component: () => JSX.Element;
+  path: string;
+};
+
+const routes: CustomRouteProps[] = [
+  { path: '/', Component: HomePage, exact: true },
+  { path: '/search', Component: Search },
+];
 
 function App(): JSX.Element {
-  const [count, setCount] = useState(0);
-
   return (
-    <Router>
-      <div className={styles.App}>
-        <header className={styles['App-header']}>
-          <button onClick={() => alert('Hello World')}>Test me</button>
-
-          <label className={styles.label}>
-            <input className={styles.label__input} placeholder={placeholder} />
-          </label>
-          <Switch>
-            <Route path="/search"></Route>
-            <Route path="/"></Route>
-          </Switch>
-        </header>
-      </div>
-    </Router>
+    <div className={styles.container}>
+      <BrowserRouter>
+        <Switch>
+          {routes.map(({ Component, ...routeProps }) => (
+            <Route key={routeProps.path} {...routeProps}>
+              <Component />
+            </Route>
+          ))}
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 

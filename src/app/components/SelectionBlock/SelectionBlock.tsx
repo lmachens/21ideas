@@ -5,9 +5,41 @@ import styles from './SelectionBlock.module.css';
 function SelectionBlock(): JSX.Element {
   return (
     <div className={styles.selectionBlock}>
-      <MealSelection link="./search" />
-      <MealSelection link="./search" />
-      <MealSelection link="./search" />
+      <div>
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+      </div>
+      <div>
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+      </div>
+      <div>
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+      </div>
+      <div>
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+      </div>
+      <div>
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+      </div>
+      <div>
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+      </div>
+      <div>
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+        <MealSelection link="./search" />
+      </div>
     </div>
   );
 }
