@@ -3,7 +3,7 @@ import SelectionBlock from './SelectionBlock';
 
 export default {
   title: 'Component/Link',
-  component: 'SelectionBlock',
+  component: SelectionBlock,
 };
 
 export const SelectionBlockContainer = (): JSX.Element => <SelectionBlock />;

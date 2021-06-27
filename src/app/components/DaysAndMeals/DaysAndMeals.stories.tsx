@@ -3,7 +3,7 @@ import DaysAndMeals from './DaysAndMeals';
 
 export default {
   title: 'Component/Days',
-  component: 'DaysAndMeals',
+  component: DaysAndMeals,
 };
 
 export const MealsPerDay = (): JSX.Element => <DaysAndMeals />;
