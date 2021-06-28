@@ -5,7 +5,7 @@ export type Query = {
   mealName: string;
 };
 
-async function searchMeals(mealName: string): Promise<[]> {
+export async function searchMeals(mealName: string): Promise<[]> {
   let apiURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=`;
   if (mealName) {
     apiURL += `${mealName}`;
@@ -21,5 +21,3 @@ async function searchMeals(mealName: string): Promise<[]> {
   const result = await response.json();
   return result;
 }
-
-export default searchMeals;
