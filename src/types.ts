@@ -14,3 +14,10 @@ export type Meal = {
   };
   instructions: string;
 };
+
+export type Recipe = {
+  id: number;
+  headline: string;
+  ingredients: string;
+  instructions: string;
+};
