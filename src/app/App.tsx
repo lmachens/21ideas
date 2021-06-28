@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, RouteProps } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import Search from './pages/SearchPage/Search';
 import styles from './App.module.css';
+import RecipePage from './pages/RecipePage/RecipePage';
 
 type CustomRouteProps = RouteProps & {
   Component: () => JSX.Element;
@@ -12,6 +13,7 @@ type CustomRouteProps = RouteProps & {
 const routes: CustomRouteProps[] = [
   { path: '/', Component: HomePage, exact: true },
   { path: '/search', Component: Search },
+  { path: '/recipe', Component: RecipePage },
 ];
 
 function App(): JSX.Element {
