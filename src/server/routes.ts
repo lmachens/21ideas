@@ -1,6 +1,6 @@
 import express from 'express';
-import searchMeals from './search';
-import { saveMeals, readMeals } from '../utils/meals';
+import searchMeals from './mealDB';
+import { saveMeals, readMeals } from './meals';
 
 const router = express.Router();
 
