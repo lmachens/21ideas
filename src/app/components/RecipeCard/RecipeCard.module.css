@@ -1,11 +1,11 @@
 .container {
   display: grid;
-  grid-template-rows: 0.5fr 1fr 3fr auto;
+  grid-template-rows: 0.5fr auto 3fr;
   opacity: 0.8;
   background: var(--breakfast-color);
   color: var(--text-color);
   border-radius: 1em;
-  margin: 1em auto;
+  margin: 2em auto;
   padding: 1.5em;
 }
 
@@ -16,5 +16,4 @@
 
 .instructions {
   font-size: 1em;
-  margin-top: 0;
 }
