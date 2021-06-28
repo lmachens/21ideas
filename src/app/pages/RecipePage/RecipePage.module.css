@@ -1,0 +1,22 @@
+.container {
+  background: url(../../assets/table.jpg);
+  height: 100vh;
+  overflow: scroll;
+  display: grid;
+  grid-template-rows: 1fr 3fr auto;
+  background-size: cover;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  grid-row: 1/2;
+  margin-top: 1em;
+}
+
+.main {
+  grid-row: 3/4;
+  margin: 1.5em;
+}
