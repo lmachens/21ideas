@@ -6,7 +6,7 @@
     "server:dev": "tsnd --project tsconfig.server.json src/server",
     "server:build": "tsc --project tsconfig.server.json",
     "client:build": "vite build",
-    "storybook:build": "build-storybook -o dist/storybook",
+    "storybook:build": "build-storybook -o dist/storybook -s src/app/assets",
     "build": "npm run server:build && npm run client:build && npm run storybook:build",
     "serve": "vite preview",
     "prepare": "husky install",
