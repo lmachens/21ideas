@@ -9,8 +9,8 @@ function RecipePage(): JSX.Element {
 
   useEffect(() => {
     fetch('/api/recipes')
-      .then((response) => response.json)
-      .then((recipes) => setRecipes);
+      .then((response) => response.json())
+      .then((recipes) => setRecipes(recipes));
   }, []);
 
   return (
