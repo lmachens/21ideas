@@ -4,7 +4,7 @@ dotenv.config();
 import express from 'express';
 import path from 'path';
 import router from './server/routes';
-import { connectDatabase } from './utils/database';
+import { connectDatabase } from './server/database';
 
 const { PORT = 3020 } = process.env;
 

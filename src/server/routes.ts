@@ -1,19 +1,22 @@
 import express from 'express';
-import searchMeals from './search';
-import { saveMeals, readMeals } from '../utils/meals';
+import { searchMeals } from './mealDB';
+import { saveMeals, readMeals } from './meals';
 
 const router = express.Router();
 
-router.get('/meals', async (_req, res) => {
+// Get all saved recipes
+router.get('/recipes', async (_req, res) => {
   const meals = await readMeals();
   res.json(meals);
 });
 
-router.post('/meals', async (req, res) => {
+// Save one recipe
+router.post('/recipes', async (req, res) => {
   await saveMeals(req.body);
-  res.send('meal saved');
+  res.send('Recipe saved');
 });
 
+// Error handling
 router.get('/search', async (_req, res, next) => {
   try {
     const { query } = _req;

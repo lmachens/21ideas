@@ -1,20 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from '../../components/NavBar/NavBar';
 import RecipeCard from '../../components/RecipeCard/RecipeCard';
+import { Meals } from '../../../types';
 import styles from './RecipePage.module.css';
 
 function RecipePage(): JSX.Element {
+  const [recipes, setRecipes] = useState<Meals[]>([]);
+
+  useEffect(() => {
+    fetch('/api/recipes')
+      .then((response) => response.json())
+      .then((recipes) => setRecipes(recipes));
+  }, []);
+  console.log(recipes);
+
   return (
     <div className={styles.container}>
       <header className={styles.header}>
         <NavBar />
       </header>
       <main className={styles.main}>
-        <RecipeCard
-          headline="Pancakes"
-          ingredients="Flour, Eggs, Sunflower Oil, Sugar, Raspberries, Blueberries"
-          instructions="Put the flour, eggs, milk, 1 tbsp oil and a pinch of salt into a bowl or large jug, then whisk to a smooth batter. Set aside for 30 mins to rest if you have time, or start cooking straight away. Set a medium frying pan or crêpe pan over a medium heat and carefully wipe it with some oiled kitchen paper. When hot, cook your pancakes for 1 min on each side until golden, keeping them warm in a low oven as you go. Serve with lemon wedges and sugar, or your favourite filling. Once cold, you can layer the pancakes between baking parchment, then wrap in cling film and freeze for up to 2 months."
-        />
+        {recipes.map((recipe) => (
+          <RecipeCard
+            key={recipe.idMeal}
+            strMeal={recipe.strMeal}
+            strIngredient1={recipe.strIngredient1}
+            strIngredient2={recipe.strIngredient2}
+            strIngredient3={recipe.strIngredient3}
+            strIngredient4={recipe.strIngredient4}
+            strIngredient5={recipe.strIngredient5}
+            strIngredient6={recipe.strIngredient6}
+            strIngredient7={recipe.strIngredient7}
+            strIngredient8={recipe.strIngredient8}
+            strMeasure1={recipe.strMeasure1}
+            strMeasure2={recipe.strMeasure2}
+            strMeasure3={recipe.strMeasure3}
+            strMeasure4={recipe.strMeasure4}
+            strMeasure5={recipe.strMeasure5}
+            strMeasure6={recipe.strMeasure6}
+            strMeasure7={recipe.strMeasure7}
+            strMeasure8={recipe.strMeasure8}
+            strInstructions={recipe.strInstructions}
+          />
+        ))}
       </main>
     </div>
   );
