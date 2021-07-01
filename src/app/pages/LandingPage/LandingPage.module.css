@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  background: var(--accent-color);
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  color: var(--text-color);
+  padding: 4em;
+}
+h3 {
+  padding-top: 0.9em;
+}
+
+.gridComponent {
+  margin-top: 2.5em;
+}
